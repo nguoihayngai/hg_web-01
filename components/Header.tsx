@@ -19,9 +19,12 @@ const Header: React.FC = () => {
           <div className="flex items-center space-x-3">
             <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-md border border-gray-100 overflow-hidden p-1">
               <img 
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvgihrBfs8eB1vZVY8tw9biV4YsiiuHXSqTg&s" 
+                src="https://upload.wikimedia.org/wikipedia/vi/thumb/d/d3/Logo_tr%C6%B0%E1%BB%9Dng_THPT_H%C3%B2n_Gai.png/200px-Logo_tr%C6%B0%E1%BB%9Dng_THPT_H%C3%B2n_Gai.png" 
                 alt="Logo THPT Hòn Gai" 
                 className="w-full h-full object-contain"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvgihrBfs8eB1vZVY8tw9biV4YsiiuHXSqTg&s";
+                }}
               />
             </div>
             <div>

@@ -1,8 +1,6 @@
 
-import { GoogleGenAI, Type } from "@google/genai";
+import { GoogleGenAI } from "@google/genai";
 import { ChatMessage } from "../types";
-
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || "" });
 
 const SCHOOL_CONTEXT = `
 Bạn là Trợ lý Ảo thông minh của trường THPT Hòn Gai (Tỉnh Quảng Ninh, Việt Nam). 
@@ -18,8 +16,26 @@ Thông tin về trường:
 Nhiệm vụ của bạn là giải đáp các thắc mắc của phụ huynh, học sinh và cựu học sinh một cách lịch sự, tự hào và chính xác. Nếu không biết thông tin cụ thể, hãy khuyên họ liên hệ văn phòng nhà trường.
 `;
 
-export const getGeminiResponse = async (history: ChatMessage[], message: string) => {
+// Helper to safely get the API key without crashing if 'process' is undefined
+const getSafeApiKey = (): string => {
   try {
+    if (typeof process !== 'undefined' && process.env && process.env.API_KEY) {
+      return process.env.API_KEY;
+    }
+  } catch (e) {
+    console.warn("Could not access process.env.API_KEY safely");
+  }
+  return "";
+};
+
+export const getGeminiResponse = async (history: ChatMessage[], message: string) => {
+  const apiKey = getSafeApiKey();
+  if (!apiKey) {
+    return "Lỗi: API Key chưa được cấu hình. Vui lòng kiểm tra lại cài đặt môi trường.";
+  }
+
+  try {
+    const ai = new GoogleGenAI({ apiKey });
     const response = await ai.models.generateContent({
       model: 'gemini-3-flash-preview',
       contents: [
@@ -45,7 +61,11 @@ export const getGeminiResponse = async (history: ChatMessage[], message: string)
 };
 
 export const getSearchGroundingResponse = async (query: string) => {
+  const apiKey = getSafeApiKey();
+  if (!apiKey) return { text: "API Key missing", sources: [] };
+
   try {
+    const ai = new GoogleGenAI({ apiKey });
     const response = await ai.models.generateContent({
       model: 'gemini-3-flash-preview',
       contents: query,

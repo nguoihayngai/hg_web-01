@@ -1,0 +1,7 @@
+{
+  "name": "THPT Hòn Gai - Quảng Ninh",
+  "description": "Trang web chính thức giới thiệu về Trường THPT Hòn Gai, ngôi trường giàu truyền thống tại Hạ Long, Quảng Ninh. Khám phá lịch sử, thành tích và cơ sở vật chất của trường qua góc nhìn hiện đại và tích hợp AI trợ giúp.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
 
       <div className="relative z-10 text-center px-4 max-w-4xl">
         <span className="inline-block py-1 px-3 rounded-full bg-blue-500/30 text-blue-100 text-sm font-semibold mb-6 backdrop-blur-md border border-white/20">
-          Kỷ niệm hơn 70 năm thành lập (1953 - 2024)
+          Kỷ niệm hơn 70 năm thành lập (1953 - 2025)
         </span>
         <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6 drop-shadow-2xl leading-tight">
           THPT Hòn Gai <br/>

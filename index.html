@@ -12,6 +12,15 @@
             font-family: 'Be Vietnam Pro', sans-serif;
             scroll-behavior: smooth;
         }
+        #root:empty::before {
+            content: 'Đang tải ứng dụng...';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #1e3a8a;
+            font-weight: 600;
+        }
     </style>
 <script type="importmap">
 {
@@ -26,5 +35,7 @@
 </head>
 <body class="bg-gray-50 text-gray-900">
     <div id="root"></div>
+    <!-- Explicitly import index.tsx as a module to ensure it loads in browser environments -->
+    <script type="module" src="./index.tsx"></script>
 </body>
 </html>

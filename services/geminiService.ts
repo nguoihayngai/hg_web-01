@@ -1,8 +1,6 @@
 
-import { GoogleGenAI, Type } from "@google/genai";
+import { GoogleGenAI } from "@google/genai";
 import { ChatMessage } from "../types";
-
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || "" });
 
 const SCHOOL_CONTEXT = `
 Bạn là Trợ lý Ảo thông minh của trường THPT Hòn Gai (Tỉnh Quảng Ninh, Việt Nam). 
@@ -20,6 +18,8 @@ Nhiệm vụ của bạn là giải đáp các thắc mắc của phụ huynh, h
 
 export const getGeminiResponse = async (history: ChatMessage[], message: string) => {
   try {
+    // Initialize inside the function to use the latest API_KEY and avoid top-level process errors
+    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || "" });
     const response = await ai.models.generateContent({
       model: 'gemini-3-flash-preview',
       contents: [
@@ -46,6 +46,7 @@ export const getGeminiResponse = async (history: ChatMessage[], message: string)
 
 export const getSearchGroundingResponse = async (query: string) => {
   try {
+    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || "" });
     const response = await ai.models.generateContent({
       model: 'gemini-3-flash-preview',
       contents: query,

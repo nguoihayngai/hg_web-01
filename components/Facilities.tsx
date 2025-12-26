@@ -22,7 +22,7 @@ const facilities = [
   },
   {
     name: "Khuôn viên trường",
-    image: "https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=800",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmAZlfUeZ8sQwpjGpaKEQBqNUjyOSJ4KgKow&s",
     description: "Sân trường rợp bóng cây xanh, là nơi lưu giữ những kỷ niệm đẹp nhất của tuổi học trò.",
     details: "Tọa lạc giữa trung tâm Hạ Long nhưng trường vẫn duy trì mật độ cây xanh cao với nhiều cây cổ thụ lâu đời, tạo không gian học tập mát mẻ và trong lành."
   }

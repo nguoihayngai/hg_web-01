@@ -2,12 +2,12 @@
 import React, { useState } from 'react';
 
 const images = [
-  "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=800",
-  "https://images.unsplash.com/photo-1541339907198-e08756ebafe3?q=80&w=800",
-  "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800",
-  "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=800",
-  "https://images.unsplash.com/photo-1511629091441-ee46146481b6?q=80&w=800",
-  "https://images.unsplash.com/photo-1577891742202-3087a39e0950?q=80&w=800",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiwfBlCB0cmA4A5FK7vn0JgupYjesQj2S6Lg&s",
+  "https://media.baoquangninh.vn/dataimages/201910/original/images1338134_HGAI.jpg",
+  "https://thpthongai.edu.vn/uploads/about/50-nam-toan-canh.jpg",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQakoDo48r5fNKsPLPlXvVmaSbiBog5wbDAg&s",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj_LCG-oZiIKqaFyLgxnU85hYzqmZ5tBr_BQ&s",
+  "https://media.quangninh.gov.vn/618ca5c4-79b3-478a-8adb-4184369067f7/Libraries/HinhAnhBaiViet/A%20BAT/Nam%202020/Thang%206/Tuan%204/vov_thi_dvsf.jpg"
 ];
 
 const Gallery: React.FC = () => {

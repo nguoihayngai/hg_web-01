@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg overflow-hidden p-1 border-2 border-blue-600/30">
                 <img 
-                  src="https://upload.wikimedia.org/wikipedia/vi/thumb/d/d3/Logo_tr%C6%B0%E1%BB%9Dng_THPT_H%C3%B2n_Gai.png/200px-Logo_tr%C6%B0%E1%BB%9Dng_THPT_H%C3%B2n_Gai.png" 
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvgihrBfs8eB1vZVY8tw9biV4YsiiuHXSqTg&s" 
                   alt="Logo THPT Hòn Gai" 
                   className="w-full h-full object-contain"
                 />
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-          <p>© 2024 Trường THPT Hòn Gai. Bản quyền thuộc về nhà trường.</p>
+          <p>Nhóm 1 Đoàn Lê Ngọc Linh và Nguyễn Minh Anh</p>
         </div>
       </div>
     </footer>

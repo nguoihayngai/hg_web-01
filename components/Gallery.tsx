@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
-
+import img1 from './6bb67e2e-e756-4172-bcdd-7fa2be2d54f6.jpg';
+import img2 from './78d27343-e847-48a2-a615-13099e775453.jpg';
 const images = [
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiwfBlCB0cmA4A5FK7vn0JgupYjesQj2S6Lg&s",
   "https://media.baoquangninh.vn/dataimages/201910/original/images1338134_HGAI.jpg",
@@ -8,8 +9,8 @@ const images = [
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQakoDo48r5fNKsPLPlXvVmaSbiBog5wbDAg&s",
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj_LCG-oZiIKqaFyLgxnU85hYzqmZ5tBr_BQ&s",
   "https://media.quangninh.gov.vn/618ca5c4-79b3-478a-8adb-4184369067f7/Libraries/HinhAnhBaiViet/A%20BAT/Nam%202020/Thang%206/Tuan%204/vov_thi_dvsf.jpg",
-  "./6bb67e2e-e756-4172-bcdd-7fa2be2d54f6.jpg",
-  "./78d27343-e847-48a2-a615-13099e775453.jpg"
+  img1,
+  img2
 ];
 
 const Gallery: React.FC = () => {

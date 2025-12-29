@@ -7,7 +7,9 @@ const images = [
   "https://thpthongai.edu.vn/uploads/about/50-nam-toan-canh.jpg",
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQakoDo48r5fNKsPLPlXvVmaSbiBog5wbDAg&s",
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj_LCG-oZiIKqaFyLgxnU85hYzqmZ5tBr_BQ&s",
-  "https://media.quangninh.gov.vn/618ca5c4-79b3-478a-8adb-4184369067f7/Libraries/HinhAnhBaiViet/A%20BAT/Nam%202020/Thang%206/Tuan%204/vov_thi_dvsf.jpg"
+  "https://media.quangninh.gov.vn/618ca5c4-79b3-478a-8adb-4184369067f7/Libraries/HinhAnhBaiViet/A%20BAT/Nam%202020/Thang%206/Tuan%204/vov_thi_dvsf.jpg",
+  "6bb67e2e-e756-4172-bcdd-7fa2be2d54f6.jpg",
+  "78d27343-e847-48a2-a615-13099e775453.jpg"
 ];
 
 const Gallery: React.FC = () => {

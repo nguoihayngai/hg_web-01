@@ -23,11 +23,6 @@ const Footer: React.FC = () => {
           </div>
 
           <div>
-            <img src="6bb67e2e-e756-4172-bcdd-7fa2be2d54f6.jpg" alt="anh mimi"></img>
-            <img src="78d27343-e847-48a2-a615-13099e775453.jpg" alt="anh linh"></img>
-          </div>
-          
-          <div>
             <h3 className="text-lg font-bold mb-6 text-blue-400">Liên kết nhanh</h3>
             <ul className="space-y-4 text-gray-400">
               <li><a href="#home" className="hover:text-white transition-colors">Trang chủ</a></li>
